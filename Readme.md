@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Дмитрий Кутузов](https://up.htmlacademy.ru/adaptive/18/user/1051695).
+* Студент: [Дмитрий Кутузов](https://up.htmlacademy.ru/adaptive/18/user/1051695)
 * Наставник: Михаил Поданев.
 
 ---

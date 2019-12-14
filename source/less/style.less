@@ -1,3 +1,63 @@
-.ok {
-  color: aliceblue;
+
+@font-face {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PTSans"),
+    local("PTSans"),
+    local("PTSans-Regular"),
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 }
+
+@font-face {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PTSans Bold"),
+    local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+body {
+  width: 320px;
+}
+
+@import "variables";
+@import "normalize.less";
+@import "page-header.less";
+@import "main-nav.less";
+@import "site-list.less";
+@import "page-main.less";
+@import "advantages.less";
+@import "facilities.less";
+@import "page-footer.less";
+@import "hashtag.less";
+@import "social.less";
+@import "copyright.less";
+@import "page-photo.less";
+@import "photos.less";

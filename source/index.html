@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -24,13 +25,13 @@
         </ul>
       </nav>
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="102" height="83" alt="Седона">
+        <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
       </a>
 
     </header>
     <main class="page-main">
       <div class="page-main__background">
-        <img class="page-main__background-image" src="#" width="281" height="214" alt="Добро пожаловать">
+        <img class="page-main__background-image" src="./img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать">
       </div>
       <h1 class="visually-hidden">О Седоне</h1>
       <section class="advantages">
@@ -58,7 +59,7 @@
               </li>
               <li class="facilities__item facilities__item--food">
                 <h3 class="facilities__title">Еда</h3>
-                <p class="facilities__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="facilities__description">Всегда заказывайте  фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
@@ -67,7 +68,7 @@
             <p class="advantages__number">— №2 —</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--square">
             <h3 class="advantages__title">небольшая площадь</h3>
             <p class="advantages__number">— №3 —</p>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
@@ -75,12 +76,12 @@
           <li class="advantages__item">
             <h3 class="advantages__title">красивая дорога</h3>
             <p class="advantages__number">— №4 —</p>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса  совсем не скучно!</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">мало туристов</h3>
             <p class="advantages__number">— №5 —</p>
-            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="advantages__description">Большинство едет в Гранд Каньон  и толпится там</p>
           </li>
         </ul>
       </section>
@@ -90,22 +91,30 @@
       </section>
     </main>
     <footer class="page-footer">
-        <p class="page-footer__hashtag hashtag">#visitsedona</p>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы на Ютуб</a>
-          </li>
-        </ul>
-        <p class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано:</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </p>
+      <p class="page-footer__hashtag hashtag">#visitsedona</p>
+      <ul class="page-footer__social social">
+        <li class="social__item social__item--twitter">
+          <a class="social__link" href="#">
+            <p class="visually-hidden">Мы в Твиттере</p>
+          </a>
+        </li>
+        <li class="social__item social__item--facebook">
+          <a class="social__link" href="#">
+            <p class="visually-hidden">Мы в Фейсбуке</p>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a class="social__link" href="#">
+            <p class="visually-hidden">Мы на Ютуб</p>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span>Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </p>
     </footer>
   </body>
 </html>

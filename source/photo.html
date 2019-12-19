@@ -76,13 +76,21 @@
         </ul>
       </section>
       <section class="video">
-        <h2 class="video__title">Вы все еще сомневаетесь?</h2>
+        <h2 class="video__title">все еще сомневаетесь?</h2>
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video__clip" controls preload="metadata" width="320" height="200">
-            <source src="#" type="video/mp4">
-            <source src="#" type="video/ogg">
-            <source src="#" type="video/webm">
-          </video>
+        <div class="video__clip">
+          <div class="video__button-pack">
+            <button class="video__button video__button--replay" type="button">
+              <span class="visually-hidden">повтор</span>
+            </button>
+            <button class="video__button video__button--cc" type="button">
+              <span class="visually-hidden">субтитры</span>
+            </button>
+            <button class="video__button video__button--fullscreen" type="button">
+              <span class="visually-hidden">на весь экран</span>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

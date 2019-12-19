@@ -1,6 +1,7 @@
 .advantages {
   display: flex;
   flex-direction: column;
+  color: @textcol;
   font-family: "PTSans", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -18,10 +19,12 @@
 .advantages__slogan {
   font-weight: 700;
   font-size: 18px;
+  color: #000000;
 }
 
 .advantages__intro {
   padding-top: 9px;
+  color: #333333;
 }
 
 .advantages__list {
@@ -35,6 +38,7 @@
 .advantages__title {
   font-size: 18px;
   margin: 0;
+  color: #000000;
 }
 
 .advantages__number {
@@ -112,4 +116,9 @@
   height: 260px;
   margin-top: 39px;
   background-image: url("../img/main-bridge-mobile@1x.jpg");
+}
+
+.advantages__item--city .advantages__title,
+.advantages__item--bridge .advantages__title {
+  color: #ffffff;
 }

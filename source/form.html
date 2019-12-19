@@ -30,57 +30,109 @@
     </header>
     <main class="page-form">
       <div class="page-form__background">
-        <img class="page-form__background-image" src="#" width="229" height="39" alt="Добро пожаловать">
+        <img class="page-form__background-image" src="./img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать">
       </div>
       <section class="review">
         <h2 class="review__title">оставьте свой отзыв</h2>
         <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review__form form" name="review-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__item form__item--intro">
-            <legend class="form__title">Представьтесь:</legend>
-            <label for="name" class="form_label">Имя<sup>*</sup>:</label>
-            <input id="name" class="form_input" type="text" name="name" required>
-            <label for="surname" class="form_label">Фамилия<sup>*</sup>:</label>
-            <input id="surname" class="form_input" type="text" name="surname" required>
-            <label for="patronymic" class="form_label">Отчество:</label>
-            <input id="patronymic" class="form_input" type="text" name="patronymic">
+            <legend class="form__title form__title--intro">Представьтесь:</legend>
+            <ul class="form__list">
+              <li class="form__point form__point--intro">
+                <label for="name" class="form__label form__label--intro">Имя*:</label>
+                <input id="name" class="form__input form__input--intro" type="text" name="name" required>
+              </li>
+              <li class="form__point form__point--intro">
+                <label for="surname" class="form__label form__label--intro">Фамилия*:</label>
+                <input id="surname" class="form__input form__input--intro" type="text" name="surname" required>
+              </li>
+              <li class="form__point form__point--intro">
+                <label for="patronymic" class="form__label form__label--intro">Отчество:</label>
+                <input id="patronymic" class="form__input form__input--intro" type="text" name="patronymic">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__item form__item--contacts">
-              <legend class="form__title">Контактная информация:</legend>
-              <label for="tel" class="form_label">Телефон<sup>*</sup>:</label>
-              <input id="tel" class="form_input" type="text" name="tel" placeholder="Введите телефон" required>
-              <label for="mail" class="form_label">Электронная почта<sup>*</sup>:</label>
-              <input id="mail" class="form_input" type="text" name="mail" placeholder="Введите e-mail" required>
+            <legend class="form__title">Контактная информация:</legend>
+            <ul class="form__list form__list--contacts">
+              <li class="form__point form__point--contacts">
+                <label for="tel" class="form__label form__label--contacts">Контактный Телефон*:</label>
+                <input id="tel" class="form__input form__input--contacts" type="text" name="tel" placeholder="Введите телефон" required>
+              </li>
+              <li class="form__point form__point--contacts">
+                <label for="mail" class="form__label form__label--contacts">Электронная почта*:</label>
+                <input id="mail" class="form__input form__input--contacts" type="text" name="mail" placeholder="Введите e-mail" required>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__item form__item--impression">
-              <legend class="form__title">Ваше общее впечатление:</legend>
-              <label for="positive" class="form_label">Скорее положительное</label>
-              <input id="positive" class="form_input" type="radio" name="impression" value="positive" checked>
-              <label for="negative" class="form_label">Скорее отрицательное</label>
-              <input id="negative" class="form_input" type="radio" name="impression" value="negative">
-              <label for="not-decided" class="form_label">Затрудняюсь ответить</label>
-              <input id="not-decided" class="form_input" type="radio" name="impression" value="not-decided">
+            <legend class="form__title form__title--impression">Ваше общее впечатление:</legend>
+            <ul class="form__list form__list--impression">
+              <li class="form__point">
+                <input id="positive" class="form__input form__input--impression" type="radio" name="impression" value="positive" checked>
+                <label for="positive" class="form__label form__label--impression">
+                  <span class="form__icon form__icon--impression"></span>
+                  Скорее положительное
+                </label>
+              </li>
+              <li class="form__point">
+                <input id="negative" class="form__input form__input--impression" type="radio" name="impression" value="negative">
+                <label for="negative" class="form__label form__label--impression">
+                  <span class="form__icon form__icon--impression"></span>
+                  Скорее отрицательное
+                </label>
+              </li>
+              <li class="form__point">
+                <input id="not-decided" class="form__input form__input--impression" type="radio" name="impression" value="not-decided">
+                <label for="not-decided" class="form__label form__label--impression">
+                  <span class="form__icon form__icon--impression"></span>
+                  Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__item form__item--sights">
-              <legend class="form__title">Посещенные достопримечательности:</legend>
-              <label for="bridge" class="form_label">Мост Дьявола</label>
-              <input id="bridge" class="form_input" type="checkbox" name="bridge">
-              <label for="mountain" class="form_label">Гора-Колокол</label>
-              <input id="mountain" class="form_input" type="checkbox" name="bridge">
-              <label for="park" class="form_label">Слайд-парк</label>
-              <input id="park" class="form_input" type="checkbox" name="park">
-              <label for="rocks" class="form_label">Красные скалы</label>
-              <input id="rocks" class="form_input" type="checkbox" name="rocks">
+              <legend class="form__title form__title--sights">Посещенные достопримечательности:</legend>
+              <ul class="form__list form__list--sights">
+                <li class="form__point">
+                  <input id="bridge" class="form__input form__input--sights" type="checkbox" name="bridge">
+                  <label for="bridge" class="form__label form__label--sights">
+                    <span class="form__icon form__icon--sights"></span>
+                    Мост Дьявола
+                  </label>
+                </li>
+                <li class="form__point">
+                  <input id="mountain" class="form__input form__input--sights" type="checkbox" name="mountain">
+                  <label for="mountain" class="form__label form__label--sights">
+                    <span class="form__icon form__icon--sights"></span>
+                    Гора-Колокол
+                  </label>
+                </li>
+                <li class="form__point">
+                  <input id="park" class="form__input form__input--sights" type="checkbox" name="park">
+                  <label for="park" class="form__label form__label--sights">
+                    <span class="form__icon form__icon--sights"></span>
+                    Слайд-парк
+                  </label>
+                </li>
+                <li class="form__point">
+                  <input id="rocks" class="form__input form__input--sights" type="checkbox" name="rocks">
+                  <label for="rocks" class="form__label form__label--sights">
+                    <span class="form__icon form__icon--sights"></span>
+                    Красные скалы
+                  </label>
+                </li>
+                </ul>
           </fieldset>
           <fieldset class="form__item form__item--emotions">
-              <label for="emotions" class="form_title">Опишите свои эмоции:</label>
-              <textarea id="emotions" class="form_input" name="emotions">Опишите подробно все свои восторги
+              <label for="emotions" class="form__title">Опишите свои эмоции:</label>
+              <textarea id="emotions" class="form__input form__input--emotions" name="emotions">Опишите подробно все свои восторги
               </textarea>
           </fieldset>
-          <input class="form_submit" type="submit" value="отправить отзыв">
-          <p class="form_required"><sup>*</sup> — обязательные поля</p>
+          <input class="form__submit" type="submit" value="отправить отзыв">
+          <p class="form__required">* — обязательные поля</p>
         </form>
-
       </section>
     </main>
     <footer class="page-footer">

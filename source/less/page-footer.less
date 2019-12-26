@@ -12,3 +12,40 @@
 .page-footer__copyright {
   margin-top: 17px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 120px;
+  }
+
+  .page-footer__copyright {
+    padding-bottom: 3px;
+    width: 256px;
+    padding-left: 66px;
+  }
+
+  .page-footer__social {
+    flex-grow: 1;
+  }
+
+  .page-footer__hashtag {
+    width: 256px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__copyright {
+    padding-bottom: 3px;
+    width: 400px;
+    padding-left: 150px;
+  }
+
+  .page-footer__hashtag {
+    width: 400px;
+    text-align: center;
+    padding-right: 25px;
+  }
+}

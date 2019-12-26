@@ -22,11 +22,13 @@
           <li class="site-list__item">
             <a href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
+          <li class="site-list__item site-list__item--logo">
+            <a class="page-header__logo"  href="index.html">
+              <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+            </a>
+          </li>
         </ul>
       </nav>
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
-      </a>
     </header>
     <main class="page-photo">
       <div class="page-photo__background">
@@ -39,39 +41,63 @@
         <ul class="photos__list">
           <li class="photos__item">
             <img class="photos__image photos__image--first" src="./img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото дороги">
-            <p class="photos__name">Неродные просторы</p>
-            <p class="photos__author">Автор фото: Борис</p>
-            <button class="photos__like-button" type="button">
-              <span class="visually-hidden">Кнопка Лайк</span>
-            </button>
-            <span class="photos__like-counter">1350</span>
+            <div class="photos__description">
+              <div class="photos__info">
+                <p class="photos__name">Неродные просторы</p>
+                <p class="photos__author">Автор фото: Борис</p>
+              </div>
+              <div class="photos__like-section">
+                <button class="photos__like-button" type="button">
+                  <span class="visually-hidden">Кнопка Лайк</span>
+                </button>
+                <span class="photos__like-counter">1350</span>
+              </div>
+            </div>
           </li>
           <li class="photos__item">
               <img class="photos__image" src="./img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото кактуса">
-              <p class="photos__name">Местная растительность</p>
-              <p class="photos__author">Автор фото: Сергей</p>
-              <button class="photos__like-button" type="button">
-                <span class="visually-hidden">Кнопка Лайк</span>
-              </button>
-              <span class="photos__like-counter">143</span>
+              <div class="photos__description">
+                <div class="photos__info">
+                  <p class="photos__name">Местная растительность</p>
+                  <p class="photos__author">Автор фото: Сергей</p>
+                </div>
+                <div class="photos__like-section">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Кнопка Лайк</span>
+                  </button>
+                  <span class="photos__like-counter">143</span>
+                </div>
+              </div>
           </li>
           <li class="photos__item">
-              <img class="photos__image" src="./img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото дороги с большой высоты">
-              <p class="photos__name">Дорога на север</p>
-              <p class="photos__author">Автор фото: Петр</p>
-              <button class="photos__like-button" type="button">
-                <span class="visually-hidden">Кнопка Лайк</span>
-              </button>
-              <span class="photos__like-counter">96</span>
+            <img class="photos__image" src="./img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото дороги с большой высоты">
+              <div class="photos__description">
+                <div class="photos__info">
+                  <p class="photos__name">Дорога на север</p>
+                  <p class="photos__author">Автор фото: Петр</p>
+                </div>
+                <div class="photos__like-section">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Кнопка Лайк</span>
+                  </button>
+                  <span class="photos__like-counter">96</span>
+                </div>
+              </div>
           </li>
           <li class="photos__item">
               <img class="photos__image" src="./img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото моста дьявола">
-              <p class="photos__name">Мост дьявола</p>
-              <p class="photos__author">Автор фото: Антон</p>
-              <button class="photos__like-button" type="button">
-                <span class="visually-hidden">Кнопка Лайк</span>
-              </button>
-              <span class="photos__like-counter">254</span>
+              <div class="photos__description">
+                <div class="photos__info">
+                  <p class="photos__name">Мост дьявола</p>
+                  <p class="photos__author">Автор фото: Антон</p>
+                </div>
+                <div class="photos__like-section">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Кнопка Лайк</span>
+                  </button>
+                  <span class="photos__like-counter">254</span>
+                </div>
+              </div>
           </li>
         </ul>
       </section>

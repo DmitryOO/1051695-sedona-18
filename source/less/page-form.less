@@ -32,3 +32,26 @@
   flex-grow: 2;
   margin-top: 10px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-form__background {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 317px;
+  }
+
+  .page-form__background::after {
+    height: 57px;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-form__background::after {
+    height: 57px;
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 0;
+  }
+
+  .page-form__background {
+    height: 328px;
+  }
+}

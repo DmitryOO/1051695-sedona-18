@@ -45,3 +45,48 @@
   margin-top: 27px;
   margin-bottom: 50px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-photo__background {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 317px;
+  }
+
+  .page-photo__background::after {
+    height: 57px;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat 0 0;
+  }
+
+  .page-photo__title {
+    font-size: 30px;
+    margin-top: 76px;
+  }
+
+  .page-photo__description {
+    margin-left: 165px;
+    margin-right: 165px;
+    margin-top: 31px;
+    margin-bottom: 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo__background::after {
+    height: 57px;
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 0;
+  }
+
+  .page-photo__background {
+    height: 328px;
+  }
+
+  .page-photo__title {
+    margin-top: 113px;
+  }
+
+  .page-photo__description {
+    margin-left: 385px;
+    margin-right: 387px;
+    margin-bottom: 70px;
+  }
+}

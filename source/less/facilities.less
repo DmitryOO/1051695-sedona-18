@@ -26,3 +26,58 @@
   padding-right: 20px;
   line-height: 21px;
 }
+
+@media (min-width: @tablet-width) {
+  .facilities {
+    flex-direction: row;
+    min-height: 330px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .facilities__item {
+    padding-bottom: 0;
+    padding-top: 159px;
+    text-align: center;
+    width: 256px;
+
+    &--food {
+      flex-grow: 1;
+    }
+
+    &--souvenirs {
+      order: 2;
+    }
+
+    &--food .facilities__description {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  .facilities__title {
+    font-size: 21px;
+  }
+
+  .facilities__description {
+    padding-top: 21px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .facilities__item {
+    width: 400px;
+  }
+
+  .facilities__description {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .facilities__wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

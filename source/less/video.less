@@ -21,6 +21,35 @@
   background: url("../img/video-mobile@1x.jpg") 0 0 no-repeat;
 }
 
+.video__progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__progress-line {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -3px;
+    left: 34px;
+  }
+}
+
 .video__button-pack {
   display: flex;
   align-items: center;
@@ -52,5 +81,95 @@
   &--fullscreen {
     width: 20px;
     background: url("../img/icon-video-fullscreen-5c.svg") 0 0 no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    margin-top: 69px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+
+  .video__description {
+    margin: 31px 165px 0;
+  }
+
+  .video__clip {
+    margin-top: 73px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    position: relative;
+    height: 500px;
+    width: 648px;
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-position: center;
+  }
+
+  .video__progress-bar {
+    position: absolute;
+    width: 100%;
+    height: 93px;
+  }
+
+  .video__button-pack {
+    width: 100%;
+    height: 93px;
+    background-color: transparent;
+    z-index: 0;
+    padding-left: 15px;
+    padding-right: 61px;
+  }
+
+  .video__button {
+    &--replay {
+      width: 20px;
+      margin-right: auto;
+      background: url("../img/icon-video-replay-white.svg") 0 0 no-repeat;
+    }
+
+    &--cc {
+      width: 33px;
+      margin-right: 30px;
+      background: url("../img/icon-video-subtitles-white.svg") 0 0 no-repeat;
+    }
+
+    &--fullscreen {
+      width: 20px;
+      background: url("../img/icon-video-fullscreen-white.svg") 0 0 no-repeat;
+    }
+  }
+
+  .video__progress-line {
+    width: 389px;
+    margin-left: -73px;
+
+    &::after {
+      left: 112px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    margin-top: 72px;
+  }
+
+  .video__description {
+    margin: 31px 385px 0;
+  }
+
+  .video__clip {
+    margin-top: 72px;
+    margin-bottom: 85px;
+    width: 800px;
+    background-image: url("../img/video-desktop@1x.jpg");
+  }
+
+  .video__progress-line {
+    width: 540px;
   }
 }

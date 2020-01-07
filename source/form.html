@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -40,7 +41,7 @@
         <form class="review__form form" name="review-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__item form__item--intro">
             <legend class="form__title form__title--intro">Представьтесь:</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--intro">
               <li class="form__point form__point--intro">
                 <label for="name" class="form__label form__label--intro">Имя*:</label>
                 <input id="name" class="form__input form__input--intro" type="text" name="name" required>
@@ -59,7 +60,7 @@
             <legend class="form__title">Контактная информация:</legend>
             <ul class="form__list form__list--contacts">
               <li class="form__point form__point--contacts">
-                <label for="tel" class="form__label form__label--contacts">Контактный Телефон*:</label>
+                <label for="tel" class="form__label form__label--contacts"><span class="form__contact-hidden">Контактный</span> Телефон*:</label>
                 <input id="tel" class="form__input form__input--contacts" type="text" name="tel" placeholder="Введите телефон" required>
               </li>
               <li class="form__point form__point--contacts">
@@ -106,7 +107,7 @@
                 </li>
                 <li class="form__point">
                   <input id="mountain" class="form__input form__input--sights" type="checkbox" name="mountain">
-                  <label for="mountain" class="form__label form__label--sights">
+                  <label for="mountain" class="form__label form__label--sights form__label--mountain">
                     <span class="form__icon form__icon--sights"></span>
                     Гора-Колокол
                   </label>

@@ -12,12 +12,41 @@
 
 .facilities__item {
   padding-bottom: 28px;
+  position: relative;
 }
 
 .facilities__title {
   font-size: 18px;
   margin: 0;
   color: #000000;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -49px;
+    top: -11px;
+    background-image: url("../img/icon-house-blue.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 38px;
+  }
+
+  &--souvenirs::before {
+    left: -48px;
+    top: -12px;
+    background-image: url("../img/icon-gift-blue.svg");
+    background-size: 32px;
+  }
+
+  &--food::before {
+    left: -51px;
+    top: -8px;
+    background-image: url("../img/icon-burger-blue.svg");
+    background-size: 38px;
+  }
 }
 
 .facilities__description {
@@ -57,6 +86,24 @@
 
   .facilities__title {
     font-size: 21px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 87px;
+      top: 56px;
+      background-size: 75px;
+    }
+
+    &--souvenirs::before {
+      top: 55px;
+      background-size: 63px;
+    }
+
+    &--food::before {
+      top: 57px;
+      background-size: 76px;
+    }
   }
 
   .facilities__description {
@@ -79,5 +126,9 @@
   .facilities__wrap {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .facilities__title::before {
+    left: 159px;
   }
 }

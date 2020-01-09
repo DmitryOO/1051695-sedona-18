@@ -7,6 +7,7 @@
 }
 
 .photos__item {
+  position: relative;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -45,6 +46,17 @@
   &--first {
     margin-top: 1px;
   }
+}
+
+.photos__description::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: -21px;
+  width: 320px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: @tablet-width) {
@@ -89,6 +101,10 @@
     padding-left: 20px;
     padding-bottom: 1px;
     min-height: 80px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .photos__like-section {

@@ -14,6 +14,21 @@
 .advantages__header {
   padding-left: 32px;
   padding-right: 32px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17px 160px 0 160px;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    z-index: 100;
+    bottom: -45px;
+    left: 0;
+  }
 }
 
 .advantages__slogan {
@@ -25,6 +40,7 @@
 .advantages__intro {
   padding-top: 9px;
   color: #333333;
+  margin-bottom: -3px;
 }
 
 .advantages__list {
@@ -32,7 +48,7 @@
   flex-direction: column;
   list-style: none;
   padding-left: 0;
-  padding-top: 15px;
+  padding-top: 14px;
 }
 
 .advantages__title {
@@ -54,13 +70,13 @@
 }
 
 .advantages__item {
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 
   &--city {
     background-color: @maincol;
     color: #ffffff;
     padding-bottom: 0;
-    padding-top: 39px;
+    padding-top: 57px;
   }
 
   &--bridge {
@@ -73,6 +89,18 @@
   &--square {
     padding-top: 27px;
     background-color: #efefef;
+  }
+
+  &--square::after,
+  &--road::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 13px;
+    width: 280px;
+    height: 1px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   &--facilities {
@@ -91,8 +119,8 @@
 }
 
 .advantages__item--city .advantages__description {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .advantages__item--city::after {
@@ -136,6 +164,10 @@
   .advantages__header {
     padding-left: 139px;
     padding-right: 139px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__slogan {
@@ -143,7 +175,7 @@
   }
 
   .advantages__list {
-    padding-top: 22px;
+    padding-top: 39px;
     display: block;
   }
 
@@ -164,6 +196,11 @@
     justify-content: flex-start;
     min-height: 256px;
     padding-top: 0;
+
+    &--square::after,
+    &--road::after {
+      display: none;
+    }
   }
 
   .advantages__item--city,
@@ -174,8 +211,8 @@
   .advantages__item--city *,
   .advantages__item--bridge * {
     width: 256px;
-    padding-left: 53px;
-    padding-right: 53px;
+    padding-left: 52px;
+    padding-right: 52px;
   }
 
   .advantages__item--city .advantages__description,
@@ -227,6 +264,11 @@
     padding-left: 55px;
     padding-right: 55px;
   }
+
+  .advantages__br {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -242,8 +284,13 @@
   .advantages__item--city *,
   .advantages__item--bridge * {
     width: 400px;
-    padding-left: 125px;
-    padding-right: 125px;
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  .advantages__br {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .advantages__item--city::after,

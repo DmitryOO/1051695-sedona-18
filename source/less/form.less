@@ -8,6 +8,33 @@
   padding: 0;
   margin: 0;
 
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 9px;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &--intro::after {
+    top: 13px;
+  }
+
+  &--contacts::after {
+    top: -13px;
+  }
+
+  &--impression::after {
+    top: 8px;
+  }
+
+  &--sights::after {
+    top: 1px;
+  }
+
   &--contacts {
     margin-top: 30px;
   }
@@ -23,6 +50,10 @@
 
   &--emotions {
     padding-top: 21px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -41,7 +72,7 @@
   &--sights {
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
+    padding-left: 23px;
   }
 
   &--sights {
@@ -86,8 +117,12 @@
     flex-grow: 2;
     padding-top: 17px;
     padding-bottom: 17px;
-    padding-left: 23px;
-    margin-left: 13px;
+    padding-left: 20px;
+    margin-left: 15px;
+
+    &::placeholder {
+      color: #000000;
+    }
   }
 
   &--contacts {
@@ -125,7 +160,8 @@
   &--emotions {
     width: 280px;
     min-height: 160px;
-    padding-top: 34px;
+    margin-top: 17px;
+    padding-top: 16px;
     padding-left: 21px;
     line-height: 26px;
   }
@@ -187,7 +223,7 @@
   .button;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 61px;
+  margin-top: 43px;
   margin-bottom: 51px;
 }
 
@@ -196,14 +232,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 60px;
+    padding-top: 64px;
     margin-bottom: 8px;
   }
 
-  .form__item--impression {
-    order: -1;
-    margin-top: 0;
-    margin-left: 13px;
+  .form__item {
+    position: relative;
+
+    &::after {
+      display: none;
+    }
+
+    &--impression {
+      order: -1;
+      margin-top: 0;
+      margin-left: 13px;
+    }
   }
 
   .form__list--impression {
@@ -223,10 +267,65 @@
     font-size: 21px;
     line-height: 26px;
 
+    &--impression::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: -50px;
+      width: 1px;
+      height: 292px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
     &--intro {
       padding-top: 0;
       margin-left: 15px;
       text-align: left;
+    }
+
+    &--contacts::before,
+    &--emotions::before,
+    &--sights::before,
+    &--contacts::after,
+    &--emotions::after,
+    &--sights::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 22px;
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &--contacts::after {
+      left: 545px;
+    }
+
+    &--sights {
+      width: 274px;
+
+      &::before {
+        top: 25px;
+        left: 60px;
+      }
+
+      &::after {
+        top: 25px;
+        left: 584px;
+      }
+    }
+
+    &--emotions::before {
+      top: 52px;
+      left: 60px;
+    }
+
+    &--emotions::after {
+      top: 52px;
+      left: 585px;
     }
   }
 
@@ -289,10 +388,6 @@
     margin-top: 10px;
   }
 
-  .form__title--sights {
-    width: 274px;
-  }
-
   .form__list--sights {
     flex-direction: row;
     flex-wrap: wrap;
@@ -309,7 +404,11 @@
   }
 
   .form__label--mountain {
-    padding-right: 14px;
+    padding-right: 11px;
+  }
+
+  .form__label--rocks {
+    margin-right: -3px;
   }
 
   .form__item--emotions {
@@ -332,25 +431,67 @@
   .form__submit {
     margin-left: 2px;
     margin-top: 51px;
-    padding-left: 71px;
-    padding-right: 71px;
+    padding-left: 61px;
+    padding-right: 80px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form {
-    padding-top: 44px;
+    padding-top: 49px;
     margin-bottom: 15px;
   }
 
   .form__item--impression {
-    padding-left: 23px;
+    padding-left: 25px;
     width: 400px;
   }
 
-  .form__title--impression {
-    text-align: right;
-    padding-right: 26px;
+  .form__title {
+    &--impression {
+      text-align: right;
+      padding-right: 26px;
+
+      &::after {
+        right: -105px;
+      }
+    }
+
+    &--contacts::before {
+      width: 280px;
+      top: 11px;
+      left: 60px;
+    }
+
+    &--contacts::after {
+      width: 280px;
+      top: 11px;
+      left: 741px;
+    }
+
+    &--sights::before {
+      width: 282px;
+      top: 25px;
+      left: 120px;
+    }
+
+    &--sights::after {
+      width: 282px;
+      top: 25px;
+      left: 800px;
+    }
+
+    &--emotions::before {
+      width: 280px;
+      top: 49px;
+      left: 120px;
+    }
+
+    &--emotions::after {
+      width: 280px;
+      top: 49px;
+      left: 800px;
+    }
   }
 
   .form__item--intro {
@@ -409,7 +550,9 @@
   }
 
   .form__list--sights {
-    width: 79%;
+    width: 80%;
+    padding-right: 9px;
+    padding-left: 3px;
   }
 
   .form__item--emotions {
@@ -423,6 +566,7 @@
   .form__submit {
     width: 480px;
     margin-left: 0;
+    padding-left: 78px;
   }
 
   .form__required {

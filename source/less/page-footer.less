@@ -1,4 +1,7 @@
 .page-footer {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +18,7 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    width: @tablet-width;
     flex-direction: row;
     justify-content: space-around;
     min-height: 120px;
@@ -37,6 +41,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+  }
+
   .page-footer__copyright {
     padding-bottom: 3px;
     width: 400px;

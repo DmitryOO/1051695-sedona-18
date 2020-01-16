@@ -15,6 +15,9 @@
 
 .map__dates {
   padding: 0 29px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .map__button {
@@ -25,11 +28,15 @@
 .map__image {
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
+  width: 100%;
   margin-top: 49px;
   margin-bottom: 15px;
   background: url("../img/bg-map-mobile@1x.jpg") 0 0 no-repeat;
   height: 350px;
+
+  .map__iframe {
+    width: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -51,14 +58,17 @@
   }
 
   .map__image {
-    width: 768px;
     margin-top: 57px;
     margin-bottom: 0;
     background: url("../img/bg-map-tablet@1x.jpg") 0 0 no-repeat;
   }
 
   .map__iframe {
-    width: 768px;
+    width: 100%;
+  }
+
+  .map__dates {
+    width: @tablet-width;
   }
 }
 
@@ -72,13 +82,12 @@
   }
 
   .map__image {
-    width: 1200px;
     margin-top: 66px;
     margin-bottom: 0;
     background: url("../img/bg-map-desktop@1x.jpg") 0 0 no-repeat;
   }
 
-  .map__iframe {
-    width: 1200px;
+  .map__dates {
+    width: @desktop-width;
   }
 }

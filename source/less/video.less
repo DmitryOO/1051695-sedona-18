@@ -8,17 +8,29 @@
 }
 
 .video__description {
-  margin: 27px 42px 0;
+  width: 240px;
+  margin-top: 27px;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .video__clip {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 320px;
   height: 267px;
   margin-top: 35px;
   margin-bottom: 54px;
-  background: url("../img/video-mobile@1x.jpg") 0 0 no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../img/video-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .video__progress-bar {
@@ -54,10 +66,11 @@
   display: flex;
   align-items: center;
   min-height: 66px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 25px;
-  padding-right: 23px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 45px;
+  padding-right: 44px;
   background-color: #f2f2f2;
 }
 
@@ -94,7 +107,8 @@
   }
 
   .video__description {
-    margin: 31px 165px 0;
+    width: 430px;
+    margin-top: 31px;
   }
 
   .video__clip {
@@ -107,6 +121,10 @@
     width: 648px;
     background-image: url("../img/video-tablet@1x.jpg");
     background-position: center;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 
   .video__progress-bar {
@@ -120,8 +138,8 @@
     height: 93px;
     background-color: transparent;
     z-index: 0;
-    padding-left: 15px;
-    padding-right: 61px;
+    padding-left: 35px;
+    padding-right: 40px;
   }
 
   .video__button {
@@ -158,15 +176,15 @@
     margin-top: 72px;
   }
 
-  .video__description {
-    margin: 31px 385px 0;
-  }
-
   .video__clip {
     margin-top: 72px;
     margin-bottom: 85px;
     width: 800px;
     background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 
   .video__progress-line {

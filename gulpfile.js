@@ -57,7 +57,7 @@ gulp.task ("copy", function() {
   "source/img/**",
   "source/js/**"
   ], {
-   base: "source"
+    base: "source"
   })
   .pipe(gulp.dest("build"));
 });

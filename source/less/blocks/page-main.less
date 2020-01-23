@@ -1,19 +1,9 @@
-.page-form {
+.page-main__background {
   margin-top: -27px;
-  color: @textcol;
-  font-family: "PTSans", "Helvetica", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.page-form__background {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
-  height: 156px;
+  background-position: 50% 0;
+  height: 390px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,8 +11,7 @@
 
   @media (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 240%;
-    background-position-x: 50%;
+    background-size: 767px auto;
   }
 
   &::after {
@@ -34,50 +23,51 @@
   }
 }
 
-.page-form__background-image {
+.page-main__background-image {
   flex-grow: 2;
-  margin-top: 10px;
+  margin-top: 30px;
+  width: 282px;
+  height: 214px;
 }
 
 @media (min-width: @tablet-width) {
-  .page-form__background {
+  .page-main__background {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    height: 317px;
-    background-size: cover;
+    height: 545px;
+    background-position-y: 100%;
+    background-size: 100% 95%;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: cover;
     }
   }
 
-  .page-form__background::after {
+  .page-main__background::after {
     height: 57px;
     background: url("../img/bg-intro-triangle-tablet.svg") no-repeat 50%;
   }
 
-  .page-form__background-image {
+  .page-main__background-image {
     width: 460px;
-    margin-top: 62px;
+    height: 350px;
+    margin-top: 70px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-form__background::after {
-    height: 57px;
-    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 50%;
-  }
-
-  .page-form__background {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    height: 328px;
+  .page-main__background {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: cover;
     }
+  }
+
+  .page-main__background::after {
+    height: 57px;
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 50%;
   }
 }
